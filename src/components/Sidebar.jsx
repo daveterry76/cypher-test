@@ -26,7 +26,7 @@ const Sidebar = () => {
   return (
     <>
       <div className='py-4 bg-blue-400 h-full overflow-y-auto'>
-        <h1 onClick={() => navigate('/')} className='font-extrabold text-3xl bg-white text-center w-fit mx-auto p-2 rounded-md cursor-pointer'><span className='text-red-700'>Cypher</span><span className='text-blue-700'>Test</span></h1>
+        <h1 onClick={() => navigate('/')} className='font-extrabold text-3xl bg-white text-center w-fit mx-auto p-2 rounded-md cursor-pointer'><span className='text-red-700'>Godot</span><span className='text-blue-700'>Test</span></h1>
         <div className='flex-1 overflow-clip'>
         {sidebarOptions.map((options, index) => (
             <>
