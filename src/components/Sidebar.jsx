@@ -25,8 +25,8 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className='py-4 bg-blue-400 h-full overflow-y-auto'>
-        <h1 onClick={() => navigate('/')} className='font-extrabold text-3xl bg-white text-center w-fit mx-auto p-2 rounded-md cursor-pointer'><span className='text-red-700'>Godot</span><span className='text-blue-700'>Test</span></h1>
+      <div className='py-4 bg-slate-900 h-full overflow-y-auto'>
+        <h1 onClick={() => navigate('/')} className='font-extrabold font-mono text-3xl bg-white text-center w-fit mx-auto p-2 rounded-md cursor-pointer'>GodotTest</h1>
         <div className='flex-1 overflow-clip'>
         {sidebarOptions.map((options, index) => (
             <>
@@ -34,11 +34,11 @@ const Sidebar = () => {
                     <h1 className='text-xl text-white font-bold'>{options.name}</h1>
                     {selectedOption === options.id
                         ? 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 text-white">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
                         </svg>
                         :
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className='w-4 h-4'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className='w-4 h-4 text-white'>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>                        
                     }

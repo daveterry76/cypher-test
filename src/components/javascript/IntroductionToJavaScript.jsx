@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import PrevPage from '../Buttons/PrevPage';
+import Disqus from '../Disqus';
 
 const IntroductionToJavaScript = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,16 @@ const IntroductionToJavaScript = () => {
           <p className='leading-loose text-lg'>Uncover the secrets of fluid typography to enhance readability and aesthetics on any device. Explore how to use relative units like percentages and viewport units to scale font sizes seamlessly. Learn to create a typographic hierarchy that adjusts dynamically to different screen dimensions.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/js/dom'> 
+            <NextPage />
+          </Link>
+        </div>
+      </div>
+      <Disqus title="Introduction to JavaScript" />
     </div> 
   )
 }

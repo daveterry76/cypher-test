@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import PrevPage from '../Buttons/PrevPage';
+import NextPage from '../Buttons/NextPage';
+import Disqus from '../Disqus';
 
 const VueEssentials = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,19 @@ const VueEssentials = () => {
           <p className='leading-loose text-lg'>Uncover the essentials of state management in Vue.js. Learn how to manage the state of your application using Vue's reactivity system and understand the role of Vuex for centralized state management in larger applications.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+          <Link to='/frontend/react'>
+            <PrevPage />
+          </Link>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/frontend/angular'> 
+            <NextPage />
+          </Link>
+        </div>
+      </div>
+      <Disqus title="Vue Essentials" />
     </div> 
   )
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
 import Disqus from '../Disqus';
 
 const IntroductionToHTML = () => {
@@ -83,6 +85,15 @@ const IntroductionToHTML = () => {
               information to HTML elements.
             </p>
           </div>
+        </div>
+      </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/html/elements'>
+            <NextPage />
+          </Link>
         </div>
       </div>
       <Disqus title="Introduction To HTML" />

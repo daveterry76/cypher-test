@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import PrevPage from '../Buttons/PrevPage';
+import Disqus from '../Disqus';
 
 const EventHandling = () => {
   const scrollToSection = (id) => {
@@ -54,6 +57,16 @@ const EventHandling = () => {
           <p className='leading-loose text-lg'>Delve into the concept of event objects, which provide information about the event that occurred. Explore how to use event objects to access details such as the type of event, target element, and additional properties related to the user interaction.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+          <Link to='/js/dom'>
+            <PrevPage />
+          </Link>
+        </div>
+        <div className='flex justify-around gap-5'>
+        </div>
+      </div>
+      <Disqus title="Event Handling" />
     </div> 
   )
 }

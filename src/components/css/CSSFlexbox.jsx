@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import PrevPage from '../Buttons/PrevPage';
+import Disqus from '../Disqus';
 
 const CSSFlexbox = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,19 @@ const CSSFlexbox = () => {
           <p className='leading-loose text-lg'>Explore real-world scenarios where Flexbox shines. From creating navigation bars to building card layouts, delve into common use cases where Flexbox provides an efficient and elegant solution for responsive design.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+         <Link to='/css/styling'>
+          <PrevPage />
+         </Link>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/css/responsive'> 
+            <NextPage />
+          </Link>
+        </div>
+      </div>
+      <Disqus title="CSS Flexbox" />
     </div> 
   )
 }

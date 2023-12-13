@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import PrevPage from '../Buttons/PrevPage';
+import Disqus from '../Disqus';
 
 const IntroductionToDatabases = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,16 @@ const IntroductionToDatabases = () => {
           <p className='leading-loose text-lg'>Uncover the pivotal role of databases in modern web development. Explore how databases enable data persistence, support efficient data retrieval, and contribute to the scalability and performance of web applications.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/database/mongodb'> 
+            <NextPage />
+          </Link>
+        </div>
+      </div>
+      <Disqus title="Introduction to Databases" />
     </div> 
   )
 }

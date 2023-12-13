@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import Disqus from '../Disqus';
 
 const ReactBasics = () => {
   const scrollToSection = (id) => {
@@ -54,6 +57,16 @@ const ReactBasics = () => {
           <p className='leading-loose text-lg'>Uncover the power of props (properties) in React.js. Explore how props allow you to pass data from one component to another, facilitating the communication between parent and child components. Grasp the concept of prop drilling.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/frontend/vue'> 
+            <NextPage />
+          </Link>
+        </div>
+      </div>
+      <Disqus title="React Basics" />
     </div> 
   )
 }

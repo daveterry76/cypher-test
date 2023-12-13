@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import PrevPage from '../Buttons/PrevPage';
+import Disqus from '../Disqus';
 
 const RESTfulAPIs = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,17 @@ const RESTfulAPIs = () => {
           <p className='leading-loose text-lg'>Uncover the methods for implementing data persistence in RESTful APIs. Explore techniques for interacting with databases, handling CRUD operations, and ensuring the integrity of your data. Understand the role of models in representing resources.</p>
         </div>
       </div>
+
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+          <Link to='/backend/expressjs'>
+            <PrevPage />
+          </Link>
+        </div>
+        <div className='flex justify-around gap-5'>
+        </div>
+      </div>
+      <Disqus title="RESTful APIs" />
     </div> 
   )
 }

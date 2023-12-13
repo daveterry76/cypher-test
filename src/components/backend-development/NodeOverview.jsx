@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import PrevPage from '../Buttons/PrevPage';
+import Disqus from '../Disqus';
 
 const NodeOverview = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,16 @@ const NodeOverview = () => {
           <p className='leading-loose text-lg'>Uncover the fundamentals of building scalable server applications with Node.js. Explore techniques for handling concurrent connections, optimizing performance, and leveraging the npm ecosystem to enhance the functionality of your Node.js applications.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/backend/expressjs'> 
+            <NextPage />
+          </Link>
+        </div>
+      </div>
+      <Disqus title="Node Overview" />
     </div> 
   )
 }

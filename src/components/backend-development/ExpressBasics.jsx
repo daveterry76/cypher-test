@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import PrevPage from '../Buttons/PrevPage';
+import Disqus from '../Disqus';
 
 const ExpressBasics = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,19 @@ const ExpressBasics = () => {
           <p className='leading-loose text-lg'>Uncover the basics of templating in Express.js. Explore how to use templating engines like EJS or Handlebars to dynamically generate HTML content, providing a dynamic and data-driven approach to building views in your web application.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+          <Link to='/backend/nodejs'>
+            <PrevPage />
+          </Link>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/backend/restfulapis'> 
+            <NextPage />
+          </Link>
+        </div>
+      </div>
+      <Disqus title="Express Basics" />
     </div> 
   )
 }

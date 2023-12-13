@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import PrevPage from '../Buttons/PrevPage';
+import NextPage from '../Buttons/NextPage';
+import Disqus from '../Disqus';
 
 const AngularFundamentals = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,16 @@ const AngularFundamentals = () => {
           <p className='leading-loose text-lg'>Uncover the power of Angular modules. Explore how modules help organize your application by grouping related components, services, and other features together. Learn the principles of modularization for a well-structured Angular application.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+          <Link to='/frontend/vue'>
+            <PrevPage />
+          </Link>
+        </div>
+        <div className='flex justify-around gap-5'>
+        </div>
+      </div>
+      <Disqus title="Angular Fundamentals" />
     </div> 
   )
 }

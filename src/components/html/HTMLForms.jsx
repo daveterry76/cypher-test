@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import PrevPage from '../Buttons/PrevPage';
 import Disqus from '../Disqus';
 
 const HTMLForms = () => {
@@ -80,6 +82,15 @@ const HTMLForms = () => {
             Master the art of validating user input with HTML forms. Explore techniques to ensure data accuracy and completeness before submission.
             Understand how attributes like required and pattern contribute to effective form validation.
           </p>
+        </div>
+      </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+          <Link to='/html/elements'>
+            <PrevPage />
+          </Link>
+        </div>
+        <div className='flex justify-around gap-5'>
         </div>
       </div>
       <Disqus title="HTML Forms" />

@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import PrevPage from '../Buttons/PrevPage';
+import Disqus from '../Disqus';
 
 const DOMManipulation = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,19 @@ const DOMManipulation = () => {
           <p className='leading-loose text-lg'>Understand the concept of events in JavaScript and how they are triggered by user interactions or other programmatic occurrences. Master the art of event handling in the DOM, attaching event listeners to elements, and executing JavaScript functions in response to user actions. Explore the concept of event propagation.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+          <Link to='/js/intro'>
+            <PrevPage />
+          </Link>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/js/event'> 
+            <NextPage />
+          </Link>
+        </div>
+      </div>
+      <Disqus title="DOM Manipulation" />
     </div> 
   )
 }

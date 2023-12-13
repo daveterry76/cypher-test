@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import PrevPage from '../Buttons/PrevPage';
+import Disqus from '../Disqus';
 
 const MongoDBBasics = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,19 @@ const MongoDBBasics = () => {
           <p className='leading-loose text-lg'>Uncover the importance of indexing in MongoDB. Explore how indexes enhance query performance by providing a quick and efficient way to access data. Learn about different types of indexes and their impact on database performance.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+          <Link to='/database/intro'>
+            <PrevPage />
+          </Link>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/database/sqlrdb'> 
+            <NextPage />
+          </Link>
+        </div>
+      </div>
+      <Disqus title="MongoDB Basics" />
     </div> 
   )
 }

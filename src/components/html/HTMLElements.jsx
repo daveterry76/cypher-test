@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import PrevPage from '../Buttons/PrevPage';
 import Disqus from '../Disqus';
 
 const HTMLElements = () => {
@@ -82,6 +85,18 @@ const HTMLElements = () => {
             effortlessly and expand your web presence. Create internal links to foster a cohesive user experience, allowing users to navigate
             seamlessly within your website.
           </p>
+        </div>
+      </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+         <Link to='/html/intro'>
+          <PrevPage />
+         </Link>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/html/forms'> 
+            <NextPage />
+          </Link>
         </div>
       </div>
       <Disqus title="HTML Elements" />

@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import NextPage from '../Buttons/NextPage';
+import PrevPage from '../Buttons/PrevPage';
+import Disqus from '../Disqus';
 
 const StylingWithCSS = () => {
   const scrollToSection = (id) => {
@@ -54,6 +58,16 @@ const StylingWithCSS = () => {
           <p className='leading-loose text-lg'>Master the fundamental concept of the CSS box model. Understand how elements are structured with content, padding, borders, and margins. Learn to manipulate these components to create visually appealing and well-spaced layouts.</p>
         </div>
       </div>
+      <div className='flex justify-between my-12'>
+        <div className='flex gap-5'>
+        </div>
+        <div className='flex justify-around gap-5'>
+          <Link to='/css/flexbox'> 
+            <NextPage />
+          </Link>
+        </div>
+      </div>
+      <Disqus title="Styling With CSS" />
     </div> 
   )
 }
